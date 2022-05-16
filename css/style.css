@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.demo {
+  color: red;
+}
+
+/*
+    .content{
+            //Thuộc tính cho div có class content
+
+        .left{
+            //Thuộc tính cho div có class left nằm bên trong div có class content
+        }
+        .right{
+            //Thuộc tính cho div có class right nằm bên trong div có class content
+        }
+    }
+*/
+/*
+    Ví dụ:
+            font: {
+                size: $...;
+                weight: bold;
+                style: italic;
+            }
+*/
+/*
+    Ví dụ:
+            {thuộc tính đã css}
+            &:hover{
+                background-color: yellow;
+            }
+*/
+/*
+    Về mặt ý nghĩa: Có thể xem nó như một function, nhưng tên
+    chính xác của nó là Mixin;
+    Ví dụ:
+            @mixin centent()
+            {
+                //Thuộc tính có tính chất lặp đi lặp lại nhiều;
+                background-color: red;
+                width: 50%;
+                text-align: center;
+                color: white;
+                padding: 50px 0;
+            }
+            //NOTE: thuộc tính nào trong mixin có gì khác nhau thì
+            //cho nó một cái tham số
+            //Ví dụ: background-color: red/blue tạo cho nó 1 cái biến
+            //$bg_left:red;
+            //$bg_right:blue;
+            Xong thêm cho mixin tham số, content($bg_block);
+            {
+                background-color: bg_block;
+                ...
+                Các thuộc tính còn lại không thay đổi thì giữ nguyên;
+            }
+    //Cách gọi lại mixin đã tạo ra bằng từ khoá:
+            @include content();
+            hoặc @include content($bg_left);
+            hoặc @include content(red);
+*/
+/*
+    Ví dụ có nhiều nút button, cùng giống nhau, thông thường
+    sẽ đi copy phần code CSS lại và paste xuống vị trí của
+    những nút cần css; bây giờ có extend rồi, thì chỉ cần
+    .btn1{
+        //Thuộc tính CSS;
+    }
+    Muốn .btn2 kế thừa được những thuộc tính của btn1:
+    .btn2{
+        @extend .btn1;
+        ...có thể thêm các thuộc tính phía dưới;
+        ...
+    }
+*/
+/*# sourceMappingURL=style.css.map */
